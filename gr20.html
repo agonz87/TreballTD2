@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>GR20 Nord · Trescamins</title>
+<meta name="description" content="Travessa guiada del GR20 Nord (Còrsega), 2–11 de setembre de 2027. Tot reservat, només has de caminar.">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a href="index.html"><img class="logo" src="img/logo_c.png" alt="Trescamins"></a>
+  <button class="burger" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+  <nav id="nav">
+    <a href="index.html#sortides" data-i18n="n_all"></a><a href="#ruta" data-i18n="n_route"></a><a href="#preu" data-i18n="n_price"></a><a href="#guia" data-i18n="n_guide"></a><a href="#faq" data-i18n="n_faq"></a><a href="reserva.html" data-i18n="n_book"></a>
+    <a class="dos" href="docs/Gonzalez_Albert_Entrega_01_Client.pdf" target="_blank" rel="noopener" data-i18n="n_dossier"></a>
+    <span class="lang"><button data-l="ca">CA</button><button data-l="es">ES</button><button data-l="en">EN</button></span>
+  </nav>
+</div></header>
+
+<section class="hero" style="padding:0">
+  <div class="wrap">
+    <div class="kicker" data-i18n="h_kicker"></div>
+    <h1>GR20 NORD</h1>
+    <p class="sub" data-i18n="h_sub"></p>
+    <p class="tag" data-i18n="h_tag"></p>
+    <div class="facts">
+      <div><b data-i18n="f_dates_b"></b><span data-i18n="f_dates_s"></span></div>
+      <div><b data-i18n="f_days_b"></b><span data-i18n="f_days_s"></span></div>
+      <div><b data-i18n="f_places_b"></b><span data-i18n="f_places_s"></span></div>
+      <div><b data-i18n="f_price_b"></b><span data-i18n="f_price_s"></span></div>
+    </div>
+    <div class="btns"><a class="btn y" href="#reserva" data-i18n="b_book"></a><a class="btn o" href="#ruta" data-i18n="b_route"></a></div>
+  </div>
+  </section>
+
+<section class="alt" id="que">
+  <div class="wrap grid2">
+    <div>
+      <div class="eyeb" data-i18n="a_eyeb"></div>
+      <h2 data-i18n="a_h"></h2>
+      <p class="lead" data-i18n="a_p"></p>
+      <h3 style="margin-top:22px" data-i18n="a_who_h"></h3>
+      <ul class="ck" data-list="a_who"></ul>
+    </div>
+    <div class="photo" style="height:420px"><img src="img/g_ninu.jpg" alt="Llac de Ninu"></div>
+  </div>
+</section>
+
+<section id="ruta">
+  <div class="wrap">
+    <div class="eyeb" data-i18n="r_eyeb"></div>
+    <h2 data-i18n="r_h"></h2>
+    <p class="lead" data-i18n="r_p"></p>
+    <div class="stats" id="stats"></div>
+    <div id="map"></div>
+    <div class="prof"><svg id="prof" viewBox="0 0 1000 250"></svg></div>
+    <div class="days" id="days"></div>
+    <p class="lead" style="margin-top:22px;font-size:16px;color:var(--mut)" data-i18n="d0"></p>
+    <div class="gal">
+      <div class="photo"><img src="img/g_cinto.jpg" alt=""></div>
+      <div class="photo"><img src="img/g_stagnu.jpg" alt=""></div>
+      <div class="photo"><img src="img/g_capitello.jpg" alt=""></div>
+      <div class="photo"><img src="img/hero.jpg" alt=""></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="inclou">
+  <div class="wrap">
+    <div class="eyeb" data-i18n="i_eyeb"></div>
+    <div class="grid2" style="align-items:start;gap:26px">
+      <div class="card"><h3 data-i18n="i_inc_h"></h3><ul class="ck" data-list="i_inc"></ul></div>
+      <div class="card"><h3 data-i18n="i_no_h"></h3><ul class="ck no" data-list="i_no"></ul></div>
+    </div>
+    <h2 style="margin-top:44px" data-i18n="m_h"></h2>
+    <div class="grid2" style="align-items:start;gap:26px">
+      <div class="card"><h3 data-i18n="m_ob_h"></h3><ul class="ck" data-list="m_ob"></ul></div>
+      <div class="card"><h3 data-i18n="m_re_h"></h3><ul class="ck" data-list="m_re"></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="preu">
+  <div class="wrap">
+    <div class="eyeb" data-i18n="p_eyeb"></div>
+    <h2 data-i18n="p_h"></h2>
+    <div class="price">
+      <div><div class="big" data-i18n="p_big"></div><p data-i18n="p_sub" style="margin-top:6px"></p><p style="margin-top:14px;font-size:14px;opacity:.9" data-i18n="p_note"></p><p style="margin-top:16px"><a class="btn y" href="docs/Contracte viatge combinat GR20 Nord.pdf" target="_blank" data-i18n="p_contract"></a></p></div>
+      <div><table id="prow"></table></div>
+    </div>
+    <h3 style="margin-top:30px" data-i18n="p_canc_h"></h3>
+    <table class="canc" id="canc"></table>
+  </div>
+</section>
+
+<section class="alt" id="guia">
+  <div class="wrap guide">
+    <div class="avatar ph"><img src="img/guia.jpg" alt="Albert Gonzalez, guia de muntanya"></div>
+    <div>
+      <div class="eyeb" data-i18n="g_eyeb"></div>
+      <h2 data-i18n="g_h"></h2>
+      <p style="color:var(--mut);font-weight:700" data-i18n="g_role"></p>
+      <div class="badges" id="badges"></div>
+      <p style="margin:10px 0" data-i18n="g_p1"></p>
+      <p style="margin:10px 0" data-i18n="g_p2"></p>
+      <p style="margin:10px 0" data-i18n="g_p3"></p>
+      <h3 style="margin-top:16px" data-i18n="g_s_h"></h3>
+      <ul class="ck" data-list="g_s"></ul>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="faq">
+  <div class="wrap" style="max-width:820px">
+    <div class="eyeb" data-i18n="q_eyeb"></div>
+    <h2 data-i18n="q_h"></h2>
+    <div id="faqs"></div>
+  </div>
+</section>
+
+<section id="dossier">
+  <div class="wrap dcw">
+    <div class="dcc"><img src="img/dossier_portada.png" alt="Portada del dossier comercial"></div>
+    <div class="dct">
+      <div class="eyeb" data-i18n="dc_eyeb"></div>
+      <h2 data-i18n="dc_h"></h2>
+      <p class="lead" data-i18n="dc_p"></p>
+      <p class="btns"><a class="btn y" href="docs/Gonzalez_Albert_Entrega_01_Client.pdf" target="_blank" rel="noopener" data-i18n="dc_view"></a><a class="btn t" href="docs/Gonzalez_Albert_Entrega_01_Client.pdf" download data-i18n="dc_dl"></a></p>
+      <small style="color:var(--mut)" data-i18n="dc_pages"></small>
+    </div>
+    <div class="dcv"><div class="dcg"><a href="docs/Gonzalez_Albert_Entrega_01_Client.pdf#page=1" target="_blank" rel="noopener"><img src="img/dossier/p1.jpg" alt="Dossier comercial, pàgina 1" loading="lazy"></a><a href="docs/Gonzalez_Albert_Entrega_01_Client.pdf#page=2" target="_blank" rel="noopener"><img src="img/dossier/p2.jpg" alt="Dossier comercial, pàgina 2" loading="lazy"></a><a href="docs/Gonzalez_Albert_Entrega_01_Client.pdf#page=3" target="_blank" rel="noopener"><img src="img/dossier/p3.jpg" alt="Dossier comercial, pàgina 3" loading="lazy"></a><a href="docs/Gonzalez_Albert_Entrega_01_Client.pdf#page=4" target="_blank" rel="noopener"><img src="img/dossier/p4.jpg" alt="Dossier comercial, pàgina 4" loading="lazy"></a><a href="docs/Gonzalez_Albert_Entrega_01_Client.pdf#page=5" target="_blank" rel="noopener"><img src="img/dossier/p5.jpg" alt="Dossier comercial, pàgina 5" loading="lazy"></a><a href="docs/Gonzalez_Albert_Entrega_01_Client.pdf#page=6" target="_blank" rel="noopener"><img src="img/dossier/p6.jpg" alt="Dossier comercial, pàgina 6" loading="lazy"></a><a href="docs/Gonzalez_Albert_Entrega_01_Client.pdf#page=7" target="_blank" rel="noopener"><img src="img/dossier/p7.jpg" alt="Dossier comercial, pàgina 7" loading="lazy"></a><a href="docs/Gonzalez_Albert_Entrega_01_Client.pdf#page=8" target="_blank" rel="noopener"><img src="img/dossier/p8.jpg" alt="Dossier comercial, pàgina 8" loading="lazy"></a><a href="docs/Gonzalez_Albert_Entrega_01_Client.pdf#page=9" target="_blank" rel="noopener"><img src="img/dossier/p9.jpg" alt="Dossier comercial, pàgina 9" loading="lazy"></a><a href="docs/Gonzalez_Albert_Entrega_01_Client.pdf#page=10" target="_blank" rel="noopener"><img src="img/dossier/p10.jpg" alt="Dossier comercial, pàgina 10" loading="lazy"></a><a href="docs/Gonzalez_Albert_Entrega_01_Client.pdf#page=11" target="_blank" rel="noopener"><img src="img/dossier/p11.jpg" alt="Dossier comercial, pàgina 11" loading="lazy"></a><a href="docs/Gonzalez_Albert_Entrega_01_Client.pdf#page=12" target="_blank" rel="noopener"><img src="img/dossier/p12.jpg" alt="Dossier comercial, pàgina 12" loading="lazy"></a><a href="docs/Gonzalez_Albert_Entrega_01_Client.pdf#page=13" target="_blank" rel="noopener"><img src="img/dossier/p13.jpg" alt="Dossier comercial, pàgina 13" loading="lazy"></a><a href="docs/Gonzalez_Albert_Entrega_01_Client.pdf#page=14" target="_blank" rel="noopener"><img src="img/dossier/p14.jpg" alt="Dossier comercial, pàgina 14" loading="lazy"></a><a href="docs/Gonzalez_Albert_Entrega_01_Client.pdf#page=15" target="_blank" rel="noopener"><img src="img/dossier/p15.jpg" alt="Dossier comercial, pàgina 15" loading="lazy"></a><a href="docs/Gonzalez_Albert_Entrega_01_Client.pdf#page=16" target="_blank" rel="noopener"><img src="img/dossier/p16.jpg" alt="Dossier comercial, pàgina 16" loading="lazy"></a></div></div>
+  </div>
+</section>
+<section class="alt" id="reserva">
+  <div class="wrap" style="max-width:820px;text-align:center">
+    <div class="eyeb" data-i18n="b_eyeb"></div>
+    <h2 data-i18n="b_h"></h2>
+    <p class="lead" style="margin:0 auto 22px" data-i18n="b_p2"></p>
+    <a class="btn y" href="reserva.html" data-i18n="b_cta"></a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div style="display:flex;gap:30px;flex-wrap:wrap;align-items:center;justify-content:space-between">
+      <div><img src="img/logo_c.png" alt="Trescamins" style="height:46px;background:#fff;border-radius:8px;padding:4px 10px"></div>
+      <div><b data-i18n="ft_contact"></b><br><a href="mailto:info@trescamins.cat">info@trescamins.cat</a> · +34 600 000 000</div>
+      <div><a href="docs/Gonzalez_Albert_Entrega_01_Client.pdf" target="_blank" rel="noopener" data-i18n="ft_dos"></a></div>
+    </div>
+    <div class="disc" data-i18n="ft_disc"></div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="js/tracks.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/extras.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

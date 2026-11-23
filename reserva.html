@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Reserva · GR20 Nord · Trescamins</title>
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a href="index.html"><img class="logo" src="img/logo_c.png" alt="Trescamins"></a>
+  <button class="burger" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+  <nav id="nav">
+    <a href="gr20.html" data-i18n="n_back"></a><a class="dos" href="docs/Gonzalez_Albert_Entrega_01_Client.pdf" target="_blank" rel="noopener" data-i18n="n_dossier"></a>
+    <span class="lang"><button data-l="ca">CA</button><button data-l="es">ES</button><button data-l="en">EN</button></span>
+  </nav>
+</div></header>
+<section style="padding-top:40px">
+  <div class="wrap" style="max-width:860px">
+    <div class="eyeb" data-i18n="rv_eyeb"></div>
+    <h1 style="font-size:clamp(30px,5vw,46px);color:var(--teal)" data-i18n="rv_h"></h1>
+    <ol class="steps" id="steps"></ol>
+
+    <div class="rs" id="s1">
+      <h2 data-i18n="rv1_h"></h2>
+      <form id="f1">
+        <div><label for="rn" data-i18n="f_name"></label><input id="rn" required></div>
+        <div><label for="re" data-i18n="f_email"></label><input id="re" type="email" required></div>
+        <div><label for="rt" data-i18n="f_phone"></label><input id="rt" type="tel"></div>
+        <div><label for="rp" data-i18n="f_ppl"></label><select id="rp"><option>1</option><option>2</option><option>3</option><option>4</option></select></div>
+        <div class="f1"><label for="rm" data-i18n="f_msg"></label><textarea id="rm" rows="3"></textarea></div>
+        <div class="f1"><label class="ck1"><input type="checkbox" required><span data-i18n="rv1_rgpd"></span></label></div>
+        <div class="f1"><button class="btn y" type="submit" data-i18n="rv_next"></button></div>
+      </form>
+    </div>
+
+    <div class="rs" id="s2" hidden>
+      <h2 data-i18n="rv2_h"></h2>
+      <table class="sum" id="sum"></table>
+      <div class="docs">
+        <a class="btn t" href="docs/Contracte viatge combinat GR20 Nord.pdf" target="_blank" data-i18n="rv2_doc"></a>
+      </div>
+      <label class="ck1"><input type="checkbox" id="acc"><span data-i18n="rv2_acc"></span></label>
+      <div class="rb"><button class="btn g" id="b2" data-i18n="rv_back"></button><button class="btn y" id="n2" disabled data-i18n="rv_next"></button></div>
+    </div>
+
+    <div class="rs" id="s3" hidden>
+      <h2 data-i18n="rv3_h"></h2>
+      <p class="lead" id="amt"></p>
+      <div class="pm">
+        <label class="pmo"><input type="radio" name="pm" value="tr" checked><b data-i18n="rv3_tr"></b><span data-i18n="rv3_tr_d"></span></label>
+        <label class="pmo"><input type="radio" name="pm" value="tj"><b data-i18n="rv3_tj"></b><span data-i18n="rv3_tj_d"></span></label>
+      </div>
+      <div class="box" id="pbox"></div>
+      <div class="rb"><button class="btn g" id="b3" data-i18n="rv_back"></button><button class="btn y" id="n3" data-i18n="rv3_ok"></button></div>
+    </div>
+
+    <div class="rs" id="s4" hidden>
+      <h2 data-i18n="rv4_h"></h2>
+      <p class="lead" id="r4p"></p>
+      <p style="margin-top:16px"><a class="btn t" href="index.html" data-i18n="rv4_home"></a></p>
+    </div>
+  </div>
+</section>
+<script src="js/i18n.js"></script>
+<script src="js/extras.js"></script>
+<script src="js/reserva.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
