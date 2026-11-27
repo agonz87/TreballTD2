@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Trescamins · GR20 Nord" xmlns="http://www.topografix.com/GPX/1/1">
+<metadata><name>GR20 Nord · waypoints d’A+ i de sortides (plans B i C)</name><desc>Cims opcionals del Pla A+ i punts de sortida i recollida dels plans B i C.</desc></metadata>
+<wpt lat="42.3797" lon="8.9464"><ele>2706</ele><name>Monte Cinto (Pla A+ dia 4)</name></wpt>
+<wpt lat="42.1433" lon="9.0983"><ele>2389</ele><name>Monte d’Oro (Pla A+ dia 9)</name></wpt>
+<wpt lat="42.4437636" lon="8.8527854"><name>Bonifatu (Auberge de la Forêt)</name><desc>Allotjament i punt de recollida de taxi</desc></wpt>
+<wpt lat="42.3326929" lon="8.9517376"><name>Calasima (carretera)</name><desc>Punt de recollida de taxi</desc></wpt>
+<wpt lat="42.342185" lon="8.9016"><name>Bergeries de Ballone</name></wpt>
+<wpt lat="42.229903" lon="9.0320774"><name>Bergerie de Grotelle (carretera D623)</name><desc>Punt de recollida de taxi</desc></wpt>
+<wpt lat="42.152686" lon="9.1526124"><name>Tattone (Gîte Chez Pierrot)</name></wpt>
+<wpt lat="42.168005" lon="9.101302"><name>Passarel·la de Tolla</name></wpt>
+<wpt lat="42.126249" lon="9.131166"><name>Vizzavona (estació)</name></wpt>
+<wpt lat="42.3052904" lon="9.1511935"><name>Corte (taxis i tren)</name></wpt>
+</gpx>

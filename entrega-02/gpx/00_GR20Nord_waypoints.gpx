@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Trescamins · GR20 Nord" xmlns="http://www.topografix.com/GPX/1/1">
+<metadata><name>GR20 Nord · waypoints</name><desc>Punts clau del Pla A amb nom i cota (EU-DEM).</desc></metadata>
+<wpt lat="42.508153" lon="8.854848"><ele>280</ele><name>Calenzana (inici)</name></wpt>
+<wpt lat="42.480656" lon="8.864645"><ele>820</ele><name>Promontori d'Arghjova</name></wpt>
+<wpt lat="42.480995" lon="8.876712"><ele>1250</ele><name>Bocca à u Saltu</name></wpt>
+<wpt lat="42.465169" lon="8.906738"><ele>1520</ele><name>Refugi d'Ortu di u Piobbu</name></wpt>
+<wpt lat="42.443973" lon="8.911765"><ele>2020</ele><name>Bocca di Pisciaghja</name></wpt>
+<wpt lat="42.433504" lon="8.915127"><ele>1900</ele><name>Bocca d'Avartoli</name></wpt>
+<wpt lat="42.426038" lon="8.90071"><ele>1270</ele><name>Refugi de Carrozzu</name></wpt>
+<wpt lat="42.422606" lon="8.898502"><ele>1250</ele><name>Passarel·la de Spasimata</name></wpt>
+<wpt lat="42.413394" lon="8.908116"><ele>1860</ele><name>Llac de la Muvrella</name></wpt>
+<wpt lat="42.407575" lon="8.910624"><ele>2010</ele><name>Bocca di Stagnu</name></wpt>
+<wpt lat="42.396932" lon="8.921677"><ele>1422</ele><name>Refugi d'Ascu Stagnu (Haut Asco)</name></wpt>
+<wpt lat="42.396932" lon="8.921677"><ele>1422</ele><name>Refugi d'Ascu Stagnu</name></wpt>
+<wpt lat="42.376365" lon="8.937491"><ele>2607</ele><name>Pointe des Éboulis</name></wpt>
+<wpt lat="42.37531" lon="8.934697"><ele>2450</ele><name>Bocca Crucetta</name></wpt>
+<wpt lat="42.362252" lon="8.91124"><ele>1683</ele><name>Refugi de Tighjettu</name></wpt>
+<wpt lat="42.342185" lon="8.9016"><ele>1440</ele><name>Bergeries de Ballone (Vallone)</name></wpt>
+<wpt lat="42.334736" lon="8.873431"><ele>1965</ele><name>Bocca di Foggiale</name></wpt>
+<wpt lat="42.335127" lon="8.868299"><ele>1991</ele><name>Refugi de Ciottulu di i Mori</name></wpt>
+<wpt lat="42.300006" lon="8.882237"><ele>1370</ele><name>Bergeries de Radule</name></wpt>
+<wpt lat="42.287122" lon="8.891744"><ele>1467</ele><name>Col de Vergio</name></wpt>
+<wpt lat="42.272005" lon="8.894547"><ele>1344</ele><name>Valdu Niellu (fons de vall)</name></wpt>
+<wpt lat="42.254281" lon="8.92611"><ele>1880</ele><name>Bocca a Reta</name></wpt>
+<wpt lat="42.255589" lon="8.936192"><ele>1760</ele><name>Llac de Ninu</name></wpt>
+<wpt lat="42.238244" lon="8.973945"><ele>1600</ele><name>Refugi de Manganu</name></wpt>
+<wpt lat="42.211544" lon="9.006063"><ele>2225</ele><name>Bocca alle Porte</name></wpt>
+<wpt lat="42.204027" lon="9.02053"><ele>2050</ele><name>Brèche de Capitello / Bocca a Soglia</name></wpt>
+<wpt lat="42.207038" lon="9.037111"><ele>2206</ele><name>Bocca Muzzella</name></wpt>
+<wpt lat="42.197304" lon="9.050403"><ele>1842</ele><name>Refugi de Petra Piana</name></wpt>
+<wpt lat="42.168005" lon="9.101302"><ele>942</ele><name>Passarel·la de Tolla</name></wpt>
+<wpt lat="42.152753" lon="9.07305"><ele>1431</ele><name>Refugi de l'Onda</name></wpt>
+<wpt lat="42.136842" lon="9.076978"><ele>2138</ele><name>Punta Muratello</name></wpt>
+<wpt lat="42.118239" lon="9.107474"><ele>1050</ele><name>Cascades dels Anglais</name></wpt>
+<wpt lat="42.126249" lon="9.131166"><ele>954</ele><name>Vizzavona (estació)</name></wpt>
+</gpx>
